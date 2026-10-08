@@ -29,6 +29,9 @@ permissions:
 # Network access
 network: defaults
 
+agent:
+  model: gpt-4o
+
 # Outputs - what APIs and tools can the AI use?
 safe-outputs:
   create-issue:          # Creates issues (default max: 1)
