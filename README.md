@@ -1,15 +1,15 @@
 # Agentic R&D Document Workflow
 
-A resilient, graph-based agentic pipeline engineered to handle dense, multi-step R&D documents and clinical trial protocols[cite: 7]. This system avoids brittle, purely linear pipelines by using a state graph architecture to implement cyclical validation loops (**Extract ➔ Validate ➔ Correct ➔ Re-evaluate**)[cite: 7], with optional on-demand Model Context Protocol (MCP) tool integration.
+A resilient, graph-based agentic pipeline engineered to handle dense, multi-step R&D documents and clinical trial protocols. This system avoids brittle, purely linear pipelines by using a state graph architecture to implement cyclical validation loops (**Extract ➔ Validate ➔ Correct ➔ Re-evaluate**), with optional on-demand Model Context Protocol (MCP) tool integration.
 
 ## Architecture & Tech Stack
 
-- **LangGraph**: Manages state orchestration, execution flow, and cyclical correction loops[cite: 7].
-- **Pydantic AI**: Powers typed, production-grade LLM agents with native runtime structured enforcement[cite: 7].
-- **FastAPI**: Provides a high-performance, asynchronous REST API layer for document processing[cite: 7].
+- **LangGraph**: Manages state orchestration, execution flow, and cyclical correction loops.
+- **Pydantic AI**: Powers typed, production-grade LLM agents with native runtime structured enforcement.
+- **FastAPI**: Provides a high-performance, asynchronous REST API layer for document processing.
 - **Model Context Protocol (MCP)**: An optional, on-demand tool execution standard that connects agents to external databases and resources securely when needed.
 
-
+```text
 ┌──────────────────────┐
 │  FastAPI Client Post │
 └──────────┬───────────┘
@@ -40,6 +40,7 @@ A resilient, graph-based agentic pipeline engineered to handle dense, multi-step
 ┌──────────────────────┐
 │ Structured JSON Res  │
 └──────────────────────┘
+```
 
 
 ## Project Structure
