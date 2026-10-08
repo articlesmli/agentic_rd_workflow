@@ -34,8 +34,8 @@ jobs:
 
     - name: Run Unit Tests
       env:
-        # Mocking the key or using a placeholder if your tests use a mock LLM provider
-        OPENAI_API_KEY: "mock-key-for-testing"
+       
+        ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
       run: |
         # Run pytest suite with PYTHONPATH explicitly set
         PYTHONPATH=. pytest
