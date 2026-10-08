@@ -8,7 +8,7 @@ on:
 
 jobs:
   lint-and-test:
-    name: 🧪 Lint & Test
+    name: Lint & Test
     runs-on: ubuntu-latest
 
     steps:
@@ -37,11 +37,11 @@ jobs:
         # Mocking the key or using a placeholder if your tests use a mock LLM provider
         OPENAI_API_KEY: "mock-key-for-testing"
       run: |
-        # Run pytest suite (looks for files named test_*.py)
-        pytest
+        # Run pytest suite with PYTHONPATH explicitly set
+        PYTHONPATH=. pytest
 
   build-and-push:
-    name: 🐳 Build & Package
+    name: Build & Package
     needs: lint-and-test
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
