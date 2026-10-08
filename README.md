@@ -48,15 +48,17 @@ A resilient, graph-based agentic pipeline engineered to handle dense, multi-step
 ```text
 agentic-rd-workflow/
 ├── .github/
-│   └── workflows/
-│       └── ci-cd.yml      # CI/CD Automation Pipeline
-├── main.py                # FastAPI application layer & endpoints
-├── graph.py               # LangGraph state machine & conditional routing logic
-├── agents.py              # Pydantic AI agent declarations and LLM configurations
-├── schemas.py             # Pydantic data models for state, extraction, and validation
-├── mcp_server.py          # Optional FastMCP server for dynamic external lookups
-├── test_workflow.py       # Pytest unit and integration suite
-└── requirements.txt       # Project dependencies
+│   ├── workflows/
+│   │   ├── ci-cd.yml             # CI/CD Automation Pipeline
+│   │   ├── my-first-workflow.md  # Agentic workflow definition for gh-aw
+│   │   └── my-first-workflow.lock.yml # Compiled workflow lock file
+├── main.py                       # FastAPI application layer & endpoints
+├── graph.py                      # LangGraph state machine & conditional routing logic
+├── agents.py                     # Pydantic AI agent declarations and LLM configurations
+├── schemas.py                    # Pydantic data models for state, extraction, and validation
+├── mcp_server.py                 # Optional FastMCP server for dynamic external lookups
+├── test_workflow.py              # Pytest unit and integration suite
+└── requirements.txt              # Project dependencies
 
 ```
 
