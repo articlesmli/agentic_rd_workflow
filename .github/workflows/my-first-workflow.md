@@ -4,8 +4,9 @@ on:
   workflow_dispatch:  # Manual trigger
 
 # Engine configuration
-engine: copilot
-model: gpt-4o
+engine: claude
+model: claude-3-5-sonnet-20241022
+
 
 # Permissions
 permissions:
