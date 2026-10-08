@@ -16,9 +16,6 @@ permissions:
 
 # Network access
 network: defaults
-
-# Use a lean/read-only profile to prevent unsupported tool generation
-profile: lean
 ---
 
 # my-first-workflow
