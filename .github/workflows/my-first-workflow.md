@@ -12,6 +12,10 @@ on:
 #   schedule: daily  # Fuzzy daily schedule (scattered execution time)
 #   # schedule: weekly on monday  # Fuzzy weekly schedule
 
+# Engine configuration
+engine: copilot
+model: gpt-4o
+
 # Permissions - what can this workflow access?
 # Write operations (creating issues, PRs, comments, etc.) are handled
 # automatically by the safe-outputs job with its own scoped permissions.
@@ -29,13 +33,10 @@ permissions:
 # Network access
 network: defaults
 
-agent:
-  model: gpt-4o
-
 # Outputs - what APIs and tools can the AI use?
 safe-outputs:
-  create-issue:          # Creates issues (default max: 1)
-    max: 5               # Optional: specify maximum number
+  create-issue:           # Creates issues (default max: 1)
+    max: 5                # Optional: specify maximum number
   # actions:
   # activation-comments:
   # add-comment:
