@@ -5,7 +5,7 @@ from schemas import ProtocolExtraction, ValidationReport
 
 # Agent 1: The Domain Expert Extractor
 extractor_agent = Agent(
-    'openai:gpt-4o',
+    'anthropic:claude-3-5-sonnet-20241022',
     output_type=ProtocolExtraction,
     system_prompt=(
         "You are an expert clinical trial data extractor. Parse the provided R&D document "
@@ -16,7 +16,7 @@ extractor_agent = Agent(
 
 # Agent 2: The Medical Validator
 validator_agent = Agent(
-    'openai:gpt-4o',
+    'anthropic:claude-3-5-sonnet-20241022',
     output_type=ValidationReport,
     system_prompt=(
         "You are a clinical trials QA auditor. Review the extracted structured data against "
@@ -25,3 +25,4 @@ validator_agent = Agent(
         "Flag all inconsistencies clearly."
     )
 )
+
