@@ -1,8 +1,8 @@
 # test_workflow.py
-import pytest
 from fastapi.testclient import TestClient
+
 from main import app
-from schemas import ProtocolExtraction, ValidationReport
+from schemas import ProtocolExtraction
 
 client = TestClient(app)
 

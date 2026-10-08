@@ -15,12 +15,11 @@ jobs:
     - name: Check out code
       uses: actions/checkout@v4
 
-    - name: Set up Python
+    - name: Set up python
       uses: actions/setup-python@v5
       with:
-        python-state: 'true'
-        python-version: '3.11'
-        cache: 'pip'
+            python-version: '3.11'
+            cache: 'pip'
 
     - name: Install dependencies
       run: |

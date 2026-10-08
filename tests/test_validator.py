@@ -1,8 +1,9 @@
-import pytest
 from pydantic_ai.models.test import TestModel
+
 from agents import validator_agent
 from graph import route_validation
 from schemas import AgentWorkflowState
+
 
 def test_validator_agent_detects_errors():
     input_text = "Review extracted data: Medication: None, Dosage: None."

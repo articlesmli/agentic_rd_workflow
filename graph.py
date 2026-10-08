@@ -1,7 +1,10 @@
-from langgraph.graph import StateGraph, END
-from schemas import AgentWorkflowState, ProtocolExtraction
+from typing import Literal
+
+from langgraph.graph import END, StateGraph
+
 from agents import extractor_agent, validator_agent
-from typing import Literal, Dict, Any 
+from schemas import AgentWorkflowState
+
 
 # Node 1: Extract/Correct Data
 async def extract_protocol_node(state: AgentWorkflowState) -> dict:

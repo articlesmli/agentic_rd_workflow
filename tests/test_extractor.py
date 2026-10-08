@@ -1,6 +1,7 @@
-import pytest
 from pydantic_ai.models.test import TestModel
+
 from agents import extractor_agent
+
 
 def test_extractor_agent_basic():
     input_prompt = "Extract protocol details: Patient received 10mg of medication X daily for 5 days."

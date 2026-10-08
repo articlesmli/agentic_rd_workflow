@@ -1,5 +1,6 @@
-from fastapi import FastAPI, HTTPException, BackgroundTasks
+from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
+
 from graph import compiled_graph
 from schemas import AgentWorkflowState, ProtocolExtraction, ValidationReport
 
@@ -36,10 +37,10 @@ async def process_rd_document(request: ProcessRequest):
             extracted_data=final_state_dict["extracted_data"],
             validation_summary=final_state_dict["validation_report"]
         )
-        
-    except Exception as e:
+
+    except Exception as e:  # noqa: BLE001
         # Log error to telemetry system here
-        raise HTTPException(status_code=500, detail=f"Graph runtime exception: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Graph runtime exception: {e!s}")
 
 if __name__ == "__main__":
     import uvicorn

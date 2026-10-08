@@ -1,6 +1,6 @@
 # agents.py
-import os
 from pydantic_ai import Agent
+
 from schemas import ProtocolExtraction, ValidationReport
 
 # Agent 1: The Domain Expert Extractor
