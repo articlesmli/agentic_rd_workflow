@@ -3,8 +3,8 @@
 on:
   workflow_dispatch:  # Manual trigger
 
-# Engine configuration
-engine: copilot
+# Engine configuration - switching to openai to avoid adapter tool restrictions
+engine: openai
 model: gpt-4o
 
 # Permissions - what can this workflow access?
@@ -12,14 +12,12 @@ permissions:
   contents: read
   issues: read
   pull-requests: read
-  copilot-requests: write
 
 # Network access
 network: defaults
 
-# Keep safe-outputs empty or minimal to avoid custom tool generation errors
+# Safe outputs configuration
 safe-outputs: {}
-
 ---
 
 # my-first-workflow
