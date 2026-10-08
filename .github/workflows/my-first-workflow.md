@@ -120,17 +120,18 @@ safe-outputs:
 
 # my-first-workflow
 
-Describe what you want the AI to do when this workflow runs.
+Analyze this repository and create a helpful health and structure report.
 
 ## Instructions
 
-Replace this section with specific instructions for the AI. For example:
+Please perform the following steps:
+1. Examine the root directory and list the key files and folders present in the repository.
+2. Read the README.md file (if it exists) to understand what this project is about.
+3. Write a concise summary of the repository's current structure, purpose, and contents.
+4. Use the `create-issue` tool to open a new GitHub issue titled "🤖 Automated Repository Health & Summary Report" containing your analysis and a few suggestions for next steps or improvements.
 
-1. Read the issue description and comments
-2. Analyze the request and gather relevant information
-3. Provide a helpful response or take appropriate action
+Be clear, professional, and concise in your report.
 
-Be clear and specific about what the AI should accomplish.
 
 ## Notes
 

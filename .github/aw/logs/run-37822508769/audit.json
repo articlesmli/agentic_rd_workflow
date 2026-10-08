@@ -1,0 +1,105 @@
+{
+  "schema_version": 2,
+  "cache_source": "full",
+  "overview": {
+    "run_id": 37822508769,
+    "workflow_name": "my-first-workflow",
+    "status": "in_progress",
+    "created_at": "2026-10-08T18:12:40Z",
+    "started_at": "2026-10-08T18:12:40Z",
+    "updated_at": "2026-10-08T18:13:12Z",
+    "duration": "32.0s",
+    "event": "workflow_dispatch",
+    "branch": "main",
+    "url": "https://github.com/articlesmli/agentic_rd_workflow/actions/runs/37822508769",
+    "logs_path": "/home/ivanovaml/agentic_rd_workflow/.github/aw/logs/run-37822508769"
+  },
+  "comparison": {
+    "baseline_found": false
+  },
+  "task_domain": {
+    "name": "code_fix",
+    "label": "Code Fix",
+    "reason": "The workflow appears oriented toward code changes or pull request review."
+  },
+  "behavior_fingerprint": {
+    "execution_style": "directed",
+    "tool_breadth": "narrow",
+    "actuation_style": "read_only",
+    "resource_profile": "lean",
+    "dispatch_mode": "standalone",
+    "agentic_fraction": 0
+  },
+  "metrics": {
+    "action_minutes": 1,
+    "error_count": 0,
+    "warning_count": 0
+  },
+  "observability_insights": [
+    {
+      "category": "execution",
+      "severity": "info",
+      "title": "Directed execution path",
+      "summary": "The run remained relatively linear with 0 turns and 0 tool types.",
+      "evidence": "turns=0 tool_types=0"
+    },
+    {
+      "category": "actuation",
+      "severity": "info",
+      "title": "Read-only posture observed",
+      "summary": "The workflow stayed in an analysis posture and did not emit any GitHub write actions.",
+      "evidence": "created_items=0 safe_items=0"
+    },
+    {
+      "category": "execution",
+      "severity": "info",
+      "title": "Log template patterns mined",
+      "summary": "Analysis identified 2 distinct event templates across 6 pipeline stages from 1 events.",
+      "evidence": "finish=1 plan=1"
+    },
+    {
+      "category": "execution",
+      "severity": "info",
+      "title": "Agent stage sequence",
+      "summary": "The observed pipeline stage sequence for this run.",
+      "evidence": "finish"
+    }
+  ],
+  "performance_metrics": {},
+  "engine_config": {
+    "engine_id": "copilot",
+    "engine_name": "GitHub Copilot CLI",
+    "model": "auto",
+    "version": "1.0.87",
+    "cli_version": "v0.89.21",
+    "firewall_version": "v0.28.23",
+    "trigger_event": "workflow_dispatch",
+    "repository": "articlesmli/agentic_rd_workflow"
+  },
+  "session_analysis": {
+    "wall_time": "32.0s",
+    "timeout_detected": false
+  },
+  "downloaded_files": [
+    {
+      "path": "/home/ivanovaml/agentic_rd_workflow/.github/aw/logs/run-37822508769/.downloaded-artifacts/all",
+      "size": 0,
+      "description": ""
+    },
+    {
+      "path": "/home/ivanovaml/agentic_rd_workflow/.github/aw/logs/run-37822508769/aw_info.json",
+      "size": 825,
+      "description": "Engine configuration and workflow metadata"
+    },
+    {
+      "path": "/home/ivanovaml/agentic_rd_workflow/.github/aw/logs/run-37822508769/models.json",
+      "size": 15894,
+      "description": "JSON data file"
+    },
+    {
+      "path": "/home/ivanovaml/agentic_rd_workflow/.github/aw/logs/run-37822508769/run_summary.json",
+      "size": 2167,
+      "description": "Cached summary of workflow run analysis"
+    }
+  ]
+}

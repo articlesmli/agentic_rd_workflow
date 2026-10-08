@@ -1,0 +1,33 @@
+{
+  "engine_id": "copilot",
+  "engine_name": "GitHub Copilot CLI",
+  "model": "auto",
+  "version": "1.0.87",
+  "agent_version": "1.0.87",
+  "workflow_name": "my-first-workflow",
+  "experimental": false,
+  "supports_tools_allowlist": true,
+  "cache_memory": false,
+  "run_id": 37822508769,
+  "run_number": 1,
+  "run_attempt": "1",
+  "repository": "articlesmli/agentic_rd_workflow",
+  "ref": "refs/heads/main",
+  "sha": "8ccb793751fb11edd0deaafd5f5cb848aa2d3c28",
+  "actor": "articlesmli",
+  "event_name": "workflow_dispatch",
+  "target_repo": "",
+  "staged": false,
+  "allowed_domains": [
+    "defaults"
+  ],
+  "firewall_enabled": true,
+  "awf_version": "v0.28.23",
+  "awmg_version": "",
+  "agent_runtime": "",
+  "steps": {
+    "firewall": "squid"
+  },
+  "created_at": "2026-10-08T18:12:58.540Z",
+  "cli_version": "v0.89.21"
+}
