@@ -179,7 +179,5 @@ The project includes a GitHub Actions configuration file located in `.github/wor
 
 * **On-Demand MCP Integration**: External tools (such as hospital site compliance lookups) can be injected dynamically via the Model Context Protocol only when required, keeping standard document extraction fast and lightweight.
 
-```
 
-```
 > **Note:** This project uses a custom virtual environment named `.venv_rd_mcp`. Activate it with: `source .venv-mcp/bin/activate`
