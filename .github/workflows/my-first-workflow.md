@@ -1,21 +1,16 @@
 ---
-# Trigger - when should this workflow run?
 on:
-  workflow_dispatch:  # Manual trigger
+  workflow_dispatch:
 
-# Engine configuration
 engine: claude
 model: claude-3-5-sonnet-20241022
 
-
-# Permissions
 permissions:
   contents: read
   issues: read
   pull-requests: read
   copilot-requests: write
 
-# Network access
 network: defaults
 ---
 
