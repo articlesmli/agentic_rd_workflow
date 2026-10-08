@@ -27,21 +27,21 @@ A resilient, graph-based agentic pipeline engineered to handle dense, multi-step
 │ └───────────┬───────────┘ │                 │
 │             │             │                 │
 │             ▼             │                 │
-│    /─────────────────\    │   "correct"     │
+│    /─────────────────\    │    "correct"    │
 │   <  route_validation >───┼─────────────────┘
 │    \─────────────────/    │
 │             │             │
 │             │ "finalize"  │
 │             ▼             │
-│          [ END ]          │
+│           [ END ]         │
 └─────────────┬─────────────┘
               │ (Returns)
               ▼
 ┌──────────────────────┐
 │ Structured JSON Res  │
 └──────────────────────┘
-```
 
+```
 
 ## Project Structure
 
@@ -157,27 +157,15 @@ pytest
 The project includes a GitHub Actions configuration file located in `.github/workflows/ci-cd.yml` which automates:
 
 * **Linting**: Performs code quality verification using Ruff.
-
-
 * **Testing**: Executes unit tests automatically via Pytest on every push or pull request.
-
-
 * **Docker Deployment**: Automatically builds and packages your application into a Docker container, pushing the resulting artifact directly to **GitHub Container Registry (GHCR)** on every successful push to the `main` branch.
-
-
 
 ## Core Resiliency Features
 
 * **State Retention**: Validation failures do not reset execution state. The exact downstream issues and failing structural items are retained in `AgentWorkflowState` and fed directly back to the extractor agent for targeted corrections.
-
-
 * **Deterministic Circuit Breakers**: The workflow enforces a structural boundary (`max_loops`). This stops un-resolvable document ambiguities from generating infinite loops or runaway API token bills.
-
-
 * **Strong Type Enforcement**: Combining LangGraph state assertions with Pydantic AI validation guarantees that schemas match exact structural expectations at node transitions before executing further pipeline cycles.
-
-
 * **On-Demand MCP Integration**: External tools (such as hospital site compliance lookups) can be injected dynamically via the Model Context Protocol only when required, keeping standard document extraction fast and lightweight.
 
+> **Note:** This project uses a custom virtual environment named `.venv_a_rd_w`. Activate it with: `source .venv_a_rd_w/bin/activate`
 
-> **Note:** This project uses a custom virtual environment named `.venv_rd_mcp`. Activate it with: `source .venv-mcp/bin/activate`
