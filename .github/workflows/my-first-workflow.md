@@ -3,9 +3,9 @@
 on:
   workflow_dispatch:  # Manual trigger
 
-# Engine configuration - switching to openai to avoid adapter tool restrictions
-engine: openai
-model: gpt-4o
+# Engine configuration - using claude to bypass copilot CLI adapter restrictions
+engine: claude
+model: claude-3-5-sonnet
 
 # Permissions - what can this workflow access?
 permissions:
@@ -33,8 +33,3 @@ Please perform the following steps:
 4. Inside `REPOSITORY_HEALTH_REPORT.md`, write a clear, professional summary of the repository's current structure, purpose, and contents, along with a few suggestions for next steps or improvements.
 
 Be clear, professional, and concise in your report. Do not attempt to call external API tools or issue creation tools directly; simply write the report directly to the file.
-
-## Notes
-
-- Run `gh aw compile` to generate the GitHub Actions workflow
-- See https://github.github.com/gh-aw/ for complete configuration options and tools documentation
