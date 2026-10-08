@@ -18,8 +18,8 @@ jobs:
     - name: Set up python
       uses: actions/setup-python@v5
       with:
-            python-version: '3.11'
-            cache: 'pip'
+        python-version: '3.11'
+        cache: 'pip'
 
     - name: Install dependencies
       run: |
@@ -45,6 +45,9 @@ jobs:
     needs: lint-and-test
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write  # Grants explicit write permissions to publish to GHCR
 
     steps:
     - name: Check out code
