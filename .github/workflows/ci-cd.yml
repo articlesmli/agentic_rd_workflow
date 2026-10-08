@@ -1,79 +1,24 @@
-name: CI/CD Pipeline
+name: Claude Agent Health Report
 
 on:
-  push:
-    branches: [ "main", "develop" ]
-  pull_request:
-    branches: [ "main" ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: read
+  pull-requests: read
 
 jobs:
-  lint-and-test:
-    name: Lint & Test
+  claude-agent:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Check out code
-      uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-    - name: Set up python
-      uses: actions/setup-python@v5
-      with:
-        python-version: '3.11'
-        cache: 'pip'
-
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install ruff pytest httpx
-        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-
-    - name: Lint with Ruff
-      run: |
-        # Stop the build if there are Python syntax errors or undefined names
-        ruff check .
-
-    - name: Run Unit Tests
-      env:
-       
-        ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-      run: |
-        # Run pytest suite with PYTHONPATH explicitly set
-        PYTHONPATH=. pytest
-
-  build-and-push:
-    name: Build & Package
-    needs: lint-and-test
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      packages: write  # Grants explicit write permissions to publish to GHCR
-
-    steps:
-    - name: Check out code
-      uses: actions/checkout@v4
-
-    - name: Set up Docker Buildx
-      uses: docker/setup-buildx-action@v3
-
-    - name: Log in to GitHub Container Registry
-      uses: docker/login-action@v3
-      with:
-        registry: ghcr.io
-        username: ${{ github.actor }}
-        password: ${{ secrets.GITHUB_TOKEN }}
-
-    - name: Downcase Repository Owner for Docker image tag
-      run: |
-        echo "REPO_OWNER=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
-
-    - name: Build and Push Docker Image
-      uses: docker/build-push-action@v6
-      with:
-        context: .
-        push: true
-        tags: |
-          ghcr.io/${{ env.REPO_OWNER }}/agentic-rd-workflow:latest
-          ghcr.io/${{ env.REPO_OWNER }}/agentic-rd-workflow:${{ github.sha }}
-        cache-from: type=gha
-        cache-to: type=gha,mode=max
+      - name: Run Claude Code Agent
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: |
+            Examine the root directory and list key files. Read README.md if it exists. 
+            Create a new file named REPOSITORY_HEALTH_REPORT.md in the root containing a clear, professional summary of the repository's structure, purpose, and contents, along with a few suggestions for improvements.
