@@ -5,14 +5,19 @@ on:
 engine: claude
 
 permissions:
-  contents: write
+  contents: read
   issues: read
-  pull-requests: write
+  pull-requests: read
   copilot-requests: write
 
 network:
   allowed:
     - api.anthropic.com
+
+safe-outputs:
+  create-pull-request:
+    title: "docs: Add repository health and structure report"
+    labels: [documentation, automation]
 ---
 
 # my-first-workflow
@@ -26,4 +31,3 @@ Please perform the following steps:
 2. Read the README.md file (if it exists) to understand what this project is about.
 3. Create a new file named `REPOSITORY_HEALTH_REPORT.md` in the root of the repository using your file editing capabilities.
 4. Write a clear, professional summary of the repository's current structure, purpose, and contents, along with a few suggestions for next steps or improvements into `REPOSITORY_HEALTH_REPORT.md`.
-5. Commit and push the `REPOSITORY_HEALTH_REPORT.md` file to the repository.
