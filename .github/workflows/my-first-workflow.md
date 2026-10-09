@@ -16,7 +16,6 @@ network:
 
 safe-outputs:
   create-pull-request:
-    title: "docs: Add repository health and structure report"
     labels: [documentation, automation]
 ---
 
