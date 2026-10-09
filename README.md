@@ -1,149 +1,76 @@
 # Agentic R&D Document Workflow
 
-A resilient, graph-based agentic pipeline engineered to handle dense, multi-step R&D documents and clinical trial protocols. This system avoids brittle, purely linear pipelines by using a state graph architecture to implement cyclical validation loops (**Extract ➔ Validate ➔ Correct ➔ Re-evaluate**), with optional on-demand Model Context Protocol (MCP) tool integration.
-
-## Architecture & Tech Stack
-
-- **LangGraph**: Manages state orchestration, execution flow, and cyclical correction loops.
-- **Pydantic AI**: Powers typed, production-grade LLM agents with native runtime structured enforcement.
-- **FastAPI**: Provides a high-performance, asynchronous REST API layer for document processing.
-- **Model Context Protocol (MCP)**: An optional, on-demand tool execution standard that connects agents to external databases and resources securely when needed.
-
-```text
-┌──────────────────────┐
-│  FastAPI Client Post │
-└──────────┬───────────┘
-           │ (Triggers)
-           ▼
-┌───────────────────────────┐
-│ LangGraph State Machine   │◄────────────────┐
-│ ┌───────────────────────┐ │                 │
-│ │  1. extract_data      │ │                 │
-│ └───────────┬───────────┘ │                 │
-│             │             │                 │
-│             ▼             │                 │
-│ ┌───────────────────────┐ │                 │ Loopback
-│ │  2. validate_data     │ │                 │ (Correction)
-│ └───────────┬───────────┘ │                 │
-│             │             │                 │
-│             ▼             │                 │
-│    /─────────────────\    │    "correct"    │
-│   <  route_validation >───┼─────────────────┘
-│    \─────────────────/    │
-│             │             │
-│             │ "finalize"  │
-│             ▼             │
-│           [ END ]         │
-└─────────────┬─────────────┘
-              │ (Returns)
-              ▼
-┌──────────────────────┐
-│ Structured JSON Res  │
-└──────────────────────┘
-
-```
+A resilient, graph-based agentic pipeline and automated runtime framework designed for processing dense R&D documents, clinical trial protocols, and managing autonomous repository operations using **GitHub Agentic Workflows (`gh-aw`)**.
 
 ## Project Structure
 
 ```text
-agentic-rd-workflow/
-├── .github/
-│   ├── workflows/
-│   │   ├── ci-cd.yml             # CI/CD Automation Pipeline
-│   │   ├── my-first-workflow.md  # Agentic workflow definition for gh-aw
-│   │   └── my-first-workflow.lock.yml # Compiled workflow lock file
-├── main.py                       # FastAPI application layer & endpoints
-├── graph.py                      # LangGraph state machine & conditional routing logic
-├── agents.py                     # Pydantic AI agent declarations and LLM configurations
+agentic_rd_workflow/
+├── .github/                      # GitHub Actions & agentic workflow definitions
+│   ├── aw/                       # Agentic workflow framework logs and locks
+│   ├── skills/                   # Reusable workflow skills
+│   └── workflows/                # CI/CD and agentic workflows (ci-cd.yml, my-first-workflow.md)
+├── activation/                   # Agent activation context, prompt templates, and metadata
+├── agent/                        # Runtime agent state, execution logs, MCP logs, and sandbox firewalls
+├── info/                         # Workflow and run metadata
+├── safe-outputs-items/           # Staged safe outputs and temporary ID maps for automated PRs
+├── successful_run_artifacts/     # Captured telemetry and output metrics from successful runs
+├── tests/                        # Unit and integration test suite
+│   ├── test_edge_cases.py
+│   ├── test_extractor.py
+│   ├── test_validator.py
+│   └── test_workflow.py
+├── usage/                        # Token usage tracking, API rate limits, and activity summaries
+├── main.py                       # FastAPI application layer & REST endpoints
+├── graph.py                      # LangGraph state machine & conditional validation routing
+├── agents.py                     # Pydantic AI agent declarations & LLM configurations
 ├── schemas.py                    # Pydantic data models for state, extraction, and validation
-├── mcp_server.py                 # Optional FastMCP server for dynamic external lookups
-├── test_workflow.py              # Pytest unit and integration suite
-└── requirements.txt              # Project dependencies
+├── mcp_server.py                 # FastMCP server for dynamic external lookups
+├── Dockerfile                    # Containerization definition
+├── requirements.txt              # Python dependencies
+└── REPOSITORY_HEALTH_REPORT.md   # Generated repository structure & health report
 
 ```
 
+## Core Tech Stack
+
+* **LangGraph**: Orchestrates execution state and cyclical correction loops (**Extract ➔ Validate ➔ Correct ➔ Re-evaluate**).
+* **Pydantic AI**: Powers typed, production-grade LLM agents with native runtime structure enforcement.
+* **FastAPI**: Provides a high-performance asynchronous REST API for document processing.
+* **Model Context Protocol (MCP)**: Secures on-demand external tool and resource integration.
+* **GitHub Agentic Workflows (`gh-aw`)**: Manages autonomous repository audits, health reports, and safe PR generation.
+
 ## Getting Started
 
-### 1. Prerequisites
+### 1. Environment Setup
 
-Ensure you have **Python 3.11+** installed on your system.
-
-### 2. Environment Setup
-
-Clone the repository, set up a virtual environment, and install the required dependencies:
+Activate your project virtual environment and install dependencies:
 
 ```bash
-# Create and activate virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows use: venv\Scripts\activate
-
-# Install dependencies
+source .venv_a_rd_w/bin/activate  # On Windows: .venv_a_rd_w\Scripts\activate
 pip install -r requirements.txt
 
 ```
 
-### 3. Configure API Keys
+### 2. Configure API Keys
 
-Set your OpenAI API key in your environment variables:
+Set your LLM API key:
 
 ```bash
-# macOS/Linux
 export OPENAI_API_KEY="your-api-key-here"
-
-# Windows (Command Prompt)
-set OPENAI_API_KEY=your-api-key-here
-
-# Windows (PowerShell)
-$env:OPENAI_API_KEY="your-api-key-here"
 
 ```
 
-### 4. Run the Application
+### 3. Run the Application
 
-Launch the FastAPI development server using Uvicorn:
+Launch the FastAPI server using Uvicorn:
 
 ```bash
 uvicorn main:app --reload --host 0.0.0.0 --port 8000
 
 ```
 
-The API will be available at `http://localhost:8000`. You can access the interactive Swagger documentation at `http://localhost:8000/docs`.
-
-## API Usage
-
-### Endpoint: `POST /v1/process-protocol`
-
-#### Request Body
-
-```json
-{
-  "document_text": "Phase III Trial Protocol. This study evaluates drug X. Primary objective: Measure progression-free survival over 24 weeks. Inclusion criteria: Patients must be 18-65 years old with confirmed diagnosis. Exclusion criteria: Patients under 18 are excluded. Target enrollment: 500 patients.",
-  "max_validation_attempts": 3
-}
-
-```
-
-#### Example Response (Success Case)
-
-```json
-{
-  "status": "success",
-  "iterations_run": 1,
-  "extracted_data": {
-    "phase": "Phase III",
-    "primary_endpoint": "Progression-free survival over 24 weeks",
-    "inclusion_criteria": ["Patients must be 18-65 years old", "Confirmed diagnosis"],
-    "exclusion_criteria": ["Patients under 18 years old"],
-    "sample_size": 500
-  },
-  "validation_summary": {
-    "is_valid": true,
-    "issues": [],
-    "recommended_fixes": null
-  }
-}
-
-```
+Access the interactive API docs at `http://localhost:8000/docs`.
 
 ## Testing
 
@@ -153,22 +80,4 @@ Run the test suite using `pytest`:
 pytest
 
 ```
-
-## CI/CD Pipeline
-
-The project includes a GitHub Actions configuration file located in `.github/workflows/ci-cd.yml` which automates:
-
-* **Linting**: Performs code quality verification using Ruff.
-* **Testing**: Executes unit tests automatically via Pytest on every push or pull request.
-* **Docker Deployment**: Automatically builds and packages your application into a Docker container, pushing the resulting artifact directly to **GitHub Container Registry (GHCR)** on every successful push to the `main` branch.
-
-## Core Resiliency Features
-
-* **State Retention**: Validation failures do not reset execution state. The exact downstream issues and failing structural items are retained in `AgentWorkflowState` and fed directly back to the extractor agent for targeted corrections.
-* **Deterministic Circuit Breakers**: The workflow enforces a structural boundary (`max_loops`). This stops un-resolvable document ambiguities from generating infinite loops or runaway API token bills.
-* **Strong Type Enforcement**: Combining LangGraph state assertions with Pydantic AI validation guarantees that schemas match exact structural expectations at node transitions before executing further pipeline cycles.
-* **On-Demand MCP Integration**: External tools (such as hospital site compliance lookups) can be injected dynamically via the Model Context Protocol only when required, keeping standard document extraction fast and lightweight.
-
-
-> **Note:** This project uses a custom virtual environment named `.venv_a_rd_w`. Activate it with: `source .venv_a_rd_w/bin/activate`
 
