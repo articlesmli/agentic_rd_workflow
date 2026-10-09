@@ -12,7 +12,7 @@ permissions:
   copilot-requests: write
 
 network:
-  allowDomains:
+  allowed:
     - api.anthropic.com
 ---
 
