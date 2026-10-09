@@ -1,0 +1,24 @@
+name: Claude Agent Health Report
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: read
+  pull-requests: read
+
+jobs:
+  claude-agent:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run Claude Code Agent
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: |
+            Examine the root directory and list key files. Read README.md if it exists. 
+            Create a new file named REPOSITORY_HEALTH_REPORT.md in the root containing a clear, professional summary of the repository's structure, purpose, and contents, along with a few suggestions for improvements.

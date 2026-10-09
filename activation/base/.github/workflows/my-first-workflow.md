@@ -3,11 +3,12 @@ on:
   workflow_dispatch:
 
 engine: claude
+model: claude-3-5-sonnet-20241022
 
 permissions:
-  contents: write
+  contents: read
   issues: read
-  pull-requests: write
+  pull-requests: read
   copilot-requests: write
 
 network:
@@ -25,5 +26,4 @@ Please perform the following steps:
 1. Examine the root directory and list the key files and folders present in the repository.
 2. Read the README.md file (if it exists) to understand what this project is about.
 3. Create a new file named `REPOSITORY_HEALTH_REPORT.md` in the root of the repository using your file editing capabilities.
-4. Write a clear, professional summary of the repository's current structure, purpose, and contents, along with a few suggestions for next steps or improvements into `REPOSITORY_HEALTH_REPORT.md`.
-5. Commit and push the `REPOSITORY_HEALTH_REPORT.md` file to the repository.
+4. Inside `REPOSITORY_HEALTH_REPORT.md`, write a clear, professional summary of the repository's current structure, purpose, and contents, along with a few suggestions for next steps or improvements.

@@ -1,0 +1,33 @@
+{
+  "engine_id": "claude",
+  "engine_name": "Claude Code",
+  "model": "claude-3-5-sonnet-20241022",
+  "version": "2.1.273",
+  "agent_version": "2.1.273",
+  "workflow_name": "my-first-workflow",
+  "experimental": false,
+  "supports_tools_allowlist": true,
+  "cache_memory": false,
+  "run_id": 37904861297,
+  "run_number": 21,
+  "run_attempt": "1",
+  "repository": "articlesmli/agentic_rd_workflow",
+  "ref": "refs/heads/main",
+  "sha": "fce0a19315728218b2c62ac11cf7a969e4756661",
+  "actor": "articlesmli",
+  "event_name": "workflow_dispatch",
+  "target_repo": "",
+  "staged": false,
+  "allowed_domains": [
+    "api.anthropic.com"
+  ],
+  "firewall_enabled": true,
+  "awf_version": "v0.28.23",
+  "awmg_version": "",
+  "agent_runtime": "",
+  "steps": {
+    "firewall": "squid"
+  },
+  "created_at": "2026-10-09T08:25:38.403Z",
+  "cli_version": "v0.89.21"
+}

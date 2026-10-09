@@ -1,0 +1,17 @@
+[2026-10-09T08:26:21.995Z] [INFO] [difc] Guard policy: {"allow-only":{"min-integrity":"approved","repos":"public"}}
+[2026-10-09T08:26:22.077Z] [INFO] [difc] Loaded discovered WASM guard from file: 00-github-guard.wasm
+[2026-10-09T08:26:22.852Z] [WARN] [difc] FORCED REPOS=PUBLIC: workflow repo articlesmli/agentic_rd_workflow is public — overriding allow-only scope to 'public' to prevent private data reads
+[2026-10-09T08:26:22.859Z] [INFO] [difc] Registered guard 'github'
+[2026-10-09T08:26:22.874Z] [DEBUG] [backend] GetOrLaunch called for server: github
+[2026-10-09T08:26:22.875Z] [INFO] [backend] Launching MCP backend server: server=github, command=docker, args=[run --rm -i -e NO_COLOR=... -e TERM=... -e PYTHONUNBUFFERED=... -e GITHUB_HOST=http... -e GITHUB_PERSONAL_ACCESS_TOKEN=ghs_... -e GITHUB_READ_ONLY=... -e GITHUB_TOOLSETS=cont... -e GITHUB_FEATURES=fiel... ghcr.io/github/github-mcp-server:v1.12.2]
+[2026-10-09T08:26:23.004Z] [INFO] [backend] [stderr] time=2026-10-09T08:26:22.997Z level=INFO msg="starting server" version=v1.12.2 host=https://github.com readOnly=true lockdownEnabled=false
+[2026-10-09T08:26:23.007Z] [INFO] [backend] [stderr] GitHub MCP Server running on stdio
+[2026-10-09T08:26:23.007Z] [INFO] [backend] [stderr] time=2026-10-09T08:26:23.007Z level=INFO msg="server run start"
+[2026-10-09T08:26:23.008Z] [INFO] [backend] [stderr] time=2026-10-09T08:26:23.007Z level=INFO msg="server connecting"
+[2026-10-09T08:26:23.008Z] [INFO] [backend] [stderr] time=2026-10-09T08:26:23.007Z level=INFO msg="server session connected" session_id=""
+[2026-10-09T08:26:23.009Z] [INFO] [backend] Successfully launched MCP backend server: server=github
+[2026-10-09T08:26:23.009Z] [INFO] [backend] [stderr] time=2026-10-09T08:26:23.007Z level=INFO msg="client log level set" level=""
+[2026-10-09T08:26:23.010Z] [INFO] [backend] Backend server info: name=github-mcp-server, version=v1.12.2
+[2026-10-09T08:26:23.014Z] [INFO] [backend] [stderr] time=2026-10-09T08:26:23.013Z level=INFO msg="client log level set" level=""
+[2026-10-09T08:26:23.131Z] [INFO] [backend] [stderr] time=2026-10-09T08:26:23.131Z level=INFO msg="client log level set" level=""
+[2026-10-09T08:26:23.354Z] [INFO] [backend] Successfully registered tools from github (took 266.442139ms)

@@ -1,0 +1,278 @@
+2026-10-09T08:33:17.213Z [DEBUG] MDM settings load completed in 1ms
+2026-10-09T08:33:17.254Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /etc/claude-code/managed-settings.json
+2026-10-09T08:33:17.255Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /home/runner/work/agentic_rd_workflow/agentic_rd_workflow/.claude/settings.json
+2026-10-09T08:33:17.255Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /home/runner/work/agentic_rd_workflow/agentic_rd_workflow/.claude/settings.local.json
+2026-10-09T08:33:17.256Z [DEBUG] Cleared CA certificates cache
+2026-10-09T08:33:17.259Z [DEBUG] [init] configureGlobalMTLS starting
+2026-10-09T08:33:17.259Z [DEBUG] [init] configureGlobalMTLS complete
+2026-10-09T08:33:17.259Z [DEBUG] [init] configureGlobalAgents starting
+2026-10-09T08:33:17.259Z [DEBUG] CA certs: stores=bundled,system, extraCertsPath=/etc/ssl/certs/ca-certificates.crt
+2026-10-09T08:33:17.259Z [DEBUG] CA certs: Loaded 121 bundled root certificates
+2026-10-09T08:33:17.265Z [DEBUG] CA certs: Loaded 122 system CA certificates
+2026-10-09T08:33:17.265Z [DEBUG] CA certs: Appended extra certificates from NODE_EXTRA_CA_CERTS (/etc/ssl/certs/ca-certificates.crt)
+2026-10-09T08:33:17.265Z [DEBUG] mTLS: Creating HTTPS agent with custom certificates
+2026-10-09T08:33:17.265Z [DEBUG] [init] configureGlobalAgents complete
+2026-10-09T08:33:17.267Z [DEBUG] Git remote URL: null
+2026-10-09T08:33:17.267Z [DEBUG] No git remote URL found
+2026-10-09T08:33:17.268Z [DEBUG] Error log sink initialized
+2026-10-09T08:33:17.273Z [DEBUG] Preserving file permissions: 100666
+2026-10-09T08:33:17.273Z [DEBUG] Writing to temp file: /home/runner/.claude.json.tmp.413.0a110eea9720
+2026-10-09T08:33:17.274Z [DEBUG] Applied original permissions to temp file
+2026-10-09T08:33:17.275Z [DEBUG] Temp file written successfully, size: 136 bytes
+2026-10-09T08:33:17.275Z [DEBUG] Renaming /home/runner/.claude.json.tmp.413.0a110eea9720 to /home/runner/.claude.json
+2026-10-09T08:33:17.275Z [DEBUG] File /home/runner/.claude.json written atomically
+2026-10-09T08:33:17.276Z [DEBUG] Preserving file permissions: 100666
+2026-10-09T08:33:17.276Z [DEBUG] Writing to temp file: /home/runner/.claude.json.tmp.413.b66c53c7a2dd
+2026-10-09T08:33:17.276Z [DEBUG] Applied original permissions to temp file
+2026-10-09T08:33:17.277Z [DEBUG] Temp file written successfully, size: 219 bytes
+2026-10-09T08:33:17.277Z [DEBUG] Renaming /home/runner/.claude.json.tmp.413.b66c53c7a2dd to /home/runner/.claude.json
+2026-10-09T08:33:17.277Z [DEBUG] File /home/runner/.claude.json written atomically
+2026-10-09T08:33:17.278Z [DEBUG] Preserving file permissions: 100666
+2026-10-09T08:33:17.278Z [DEBUG] Writing to temp file: /home/runner/.claude.json.tmp.413.e0da79deff34
+2026-10-09T08:33:17.278Z [DEBUG] Applied original permissions to temp file
+2026-10-09T08:33:17.279Z [DEBUG] Temp file written successfully, size: 255 bytes
+2026-10-09T08:33:17.279Z [DEBUG] Renaming /home/runner/.claude.json.tmp.413.e0da79deff34 to /home/runner/.claude.json
+2026-10-09T08:33:17.279Z [DEBUG] File /home/runner/.claude.json written atomically
+2026-10-09T08:33:17.280Z [DEBUG] Preserving file permissions: 100666
+2026-10-09T08:33:17.280Z [DEBUG] Writing to temp file: /home/runner/.claude.json.tmp.413.99810e83f5e5
+2026-10-09T08:33:17.280Z [DEBUG] Applied original permissions to temp file
+2026-10-09T08:33:17.280Z [DEBUG] Temp file written successfully, size: 294 bytes
+2026-10-09T08:33:17.280Z [DEBUG] Renaming /home/runner/.claude.json.tmp.413.99810e83f5e5 to /home/runner/.claude.json
+2026-10-09T08:33:17.281Z [DEBUG] File /home/runner/.claude.json written atomically
+2026-10-09T08:33:17.282Z [DEBUG] Preserving file permissions: 100666
+2026-10-09T08:33:17.282Z [DEBUG] Writing to temp file: /home/runner/.claude.json.tmp.413.3c5c757996c4
+2026-10-09T08:33:17.282Z [DEBUG] Applied original permissions to temp file
+2026-10-09T08:33:17.282Z [DEBUG] Temp file written successfully, size: 321 bytes
+2026-10-09T08:33:17.282Z [DEBUG] Renaming /home/runner/.claude.json.tmp.413.3c5c757996c4 to /home/runner/.claude.json
+2026-10-09T08:33:17.283Z [DEBUG] File /home/runner/.claude.json written atomically
+2026-10-09T08:33:17.283Z [DEBUG] Preserving file permissions: 100666
+2026-10-09T08:33:17.283Z [DEBUG] Writing to temp file: /home/runner/.claude.json.tmp.413.62bd8ee1702d
+2026-10-09T08:33:17.284Z [DEBUG] Applied original permissions to temp file
+2026-10-09T08:33:17.284Z [DEBUG] Temp file written successfully, size: 369 bytes
+2026-10-09T08:33:17.284Z [DEBUG] Renaming /home/runner/.claude.json.tmp.413.62bd8ee1702d to /home/runner/.claude.json
+2026-10-09T08:33:17.284Z [DEBUG] File /home/runner/.claude.json written atomically
+2026-10-09T08:33:17.285Z [DEBUG] Preserving file permissions: 100666
+2026-10-09T08:33:17.285Z [DEBUG] Writing to temp file: /home/runner/.claude.json.tmp.413.a2890cc19ba8
+2026-10-09T08:33:17.285Z [DEBUG] Applied original permissions to temp file
+2026-10-09T08:33:17.286Z [DEBUG] Temp file written successfully, size: 395 bytes
+2026-10-09T08:33:17.286Z [DEBUG] Renaming /home/runner/.claude.json.tmp.413.a2890cc19ba8 to /home/runner/.claude.json
+2026-10-09T08:33:17.286Z [DEBUG] File /home/runner/.claude.json written atomically
+2026-10-09T08:33:17.295Z [DEBUG] [Claude in Chrome] Disabled: OAuth token has no scope accepted by /api/oauth/validate (needs user:profile, user:office, or user:ccr_inference; env-var and setup-token sessions default to user:inference only)
+2026-10-09T08:33:17.304Z [DEBUG] [ToolSearch:optimistic] disabled: ANTHROPIC_BASE_URL=http://172.30.0.30:10001 is not a first-party Anthropic host. Set ENABLE_TOOL_SEARCH=true (or auto / auto:N) if your proxy forwards tool_reference blocks.
+2026-10-09T08:33:17.307Z [WARN] [permissions] Permission allow rule (--allowed-tools): MultiEdit(/tmp/*) is not matched by file permission checks — only Edit(path) rules are. Use Edit(/tmp/*) instead (Edit rules cover all file-editing tools).
+2026-10-09T08:33:17.307Z [WARN] [permissions] Permission allow rule (--allowed-tools): Write(/tmp/*) is not matched by file permission checks — only Edit(path) rules are. Use Edit(/tmp/*) instead (Edit rules cover all file-editing tools).
+2026-10-09T08:33:17.307Z [DEBUG] [claudeai-mcp] Disabled: API-key auth precedence active
+2026-10-09T08:33:17.307Z [DEBUG] [STARTUP] Loading MCP configs...
+2026-10-09T08:33:17.313Z [DEBUG] [STARTUP] Running setup()...
+2026-10-09T08:33:17.318Z [DEBUG] installed_plugins.json doesn't exist, returning empty V2 object
+2026-10-09T08:33:17.318Z [DEBUG] Loading skills from: managed=/etc/claude-code/.claude/skills, user=/home/runner/.claude/skills, project=[]
+2026-10-09T08:33:17.319Z [DEBUG] Failed to stat directory /etc/claude-code/.claude/agents: ENOENT: no such file or directory, stat '/etc/claude-code/.claude/agents'
+2026-10-09T08:33:17.319Z [DEBUG] Failed to stat directory /home/runner/.claude/agents: ENOENT: no such file or directory, stat '/home/runner/.claude/agents'
+2026-10-09T08:33:17.320Z [DEBUG] Failed to stat directory /etc/claude-code/.claude/commands: ENOENT: no such file or directory, stat '/etc/claude-code/.claude/commands'
+2026-10-09T08:33:17.320Z [DEBUG] Failed to stat directory /home/runner/.claude/commands: ENOENT: no such file or directory, stat '/home/runner/.claude/commands'
+2026-10-09T08:33:17.320Z [DEBUG] Loaded 0 unique skills (0 unconditional, 0 conditional, managed: 0, user: 0, project: 0, additional: 0, legacy commands: 0)
+2026-10-09T08:33:17.321Z [DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+2026-10-09T08:33:17.322Z [DEBUG] getPluginSkills: Processing 0 enabled plugins
+2026-10-09T08:33:17.322Z [DEBUG] Total plugin workflows loaded: 0
+2026-10-09T08:33:17.322Z [DEBUG] Total plugin commands loaded: 0
+2026-10-09T08:33:17.322Z [DEBUG] Total plugin agents loaded: 0
+2026-10-09T08:33:17.322Z [DEBUG] Total plugin skills loaded: 0 (0 duplicate/user-owned entries skipped)
+2026-10-09T08:33:17.325Z [DEBUG] Git remote URL: https://github.com/articlesmli/agentic_rd_workflow.git
+2026-10-09T08:33:17.325Z [DEBUG] Parsed repository: github.com/articlesmli/agentic_rd_workflow from URL: https://github.com/articlesmli/agentic_rd_workflow.git
+2026-10-09T08:33:17.325Z [WARN] [uds-messaging] sockets directory /run/user/1001/cc-socks refused (EACCES: permission denied, mkdir '/run/user'); trying the per-uid fallback /tmp/cc-socks-1001
+2026-10-09T08:33:17.328Z [INFO] [uds-messaging] Listening: /tmp/cc-socks-1001/413.sock
+2026-10-09T08:33:17.328Z [INFO] [uds-messaging] Inject messages (auth line optional here): { echo '{"type":"auth","token":"[REDACTED]"$CLAUDE_CODE_MESSAGING_TOKEN"'"}'; echo '{"type":"user","message":{"role":"user","content":"hello"}}'; } | socat - UNIX-CONNECT:/tmp/cc-socks-1001/413.sock
+2026-10-09T08:33:17.328Z [INFO] [uds-messaging] Connect when the data is ready (e.g. out=$(cmd); printf '%s\n' "$out" | nc -N -U "$CLAUDE_CODE_MESSAGING_SOCKET" — or the socat form above): a connection that sends no complete line within 30000 ms is closed
+2026-10-09T08:33:17.329Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /etc/claude-code/managed-settings.json
+2026-10-09T08:33:17.330Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /home/runner/work/agentic_rd_workflow/agentic_rd_workflow/.claude/settings.json
+2026-10-09T08:33:17.330Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /home/runner/work/agentic_rd_workflow/agentic_rd_workflow/.claude/settings.local.json
+2026-10-09T08:33:17.331Z [DEBUG] Error log sink initialized
+2026-10-09T08:33:17.334Z [DEBUG] hooks modules not loaded: rollout flag (tengu_plugin_hooks_modules) is off, from the default (GrowthBook is off for this session: a third-party provider, or telemetry opted out)
+2026-10-09T08:33:17.334Z [DEBUG] sec-default@builtin not seated: hooks modules are off in this process
+2026-10-09T08:33:17.335Z [DEBUG] Registered 0 hooks from 0 plugins
+2026-10-09T08:33:17.336Z [DEBUG] [STARTUP] setup() completed in 23ms
+2026-10-09T08:33:17.336Z [DEBUG] Cleared mTLS configuration cache
+2026-10-09T08:33:17.336Z [DEBUG] Cleared proxy agent cache
+2026-10-09T08:33:17.336Z [DEBUG] mTLS: Creating HTTPS agent with custom certificates
+2026-10-09T08:33:17.343Z [DEBUG] [STARTUP] Loading commands and agents...
+2026-10-09T08:33:17.347Z [DEBUG] getSkills returning: 0 skill dir commands, 0 plugin skills, 40 bundled skills, 0 builtin plugin skills
+2026-10-09T08:33:17.352Z [DEBUG] [STARTUP] Commands and agents loaded in 9ms
+2026-10-09T08:33:17.354Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
+2026-10-09T08:33:17.354Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
+2026-10-09T08:33:17.354Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+2026-10-09T08:33:17.354Z [DEBUG] Starting background startup prefetches
+2026-10-09T08:33:17.354Z [DEBUG] [Bootstrap] Skipped: no usable OAuth, WIF, or API key
+2026-10-09T08:33:17.355Z [DEBUG] [STARTUP] MCP configs resolved in 14ms (awaited at +47ms)
+2026-10-09T08:33:17.355Z [DEBUG] Total LSP servers loaded: 0
+2026-10-09T08:33:17.356Z [DEBUG] [LSP SERVER MANAGER] getAllLspServers returned 0 server(s)
+2026-10-09T08:33:17.356Z [DEBUG] LSP manager initialized with 0 servers
+2026-10-09T08:33:17.357Z [DEBUG] Cleared mTLS configuration cache
+2026-10-09T08:33:17.357Z [DEBUG] Cleared proxy agent cache
+2026-10-09T08:33:17.357Z [DEBUG] mTLS: Creating HTTPS agent with custom certificates
+2026-10-09T08:33:17.359Z [DEBUG] LSP server manager initialized successfully
+2026-10-09T08:33:17.359Z [DEBUG] LSP notification handlers registered successfully for all 0 server(s)
+2026-10-09T08:33:17.359Z [DEBUG] Initialized versioned plugins system with 0 plugins
+2026-10-09T08:33:17.360Z [DEBUG] [MCP] --mcp-config servers running fully async (nonblocking)
+2026-10-09T08:33:17.360Z [DEBUG] [MCP] claude.ai connectors running fully async (nonblocking)
+2026-10-09T08:33:17.366Z [DEBUG] [auto-mode] verifyAutoModeGateAccess: enabledState=enabled disabledBySettings=false model=claude-sonnet-5 modelSupported=true disableFastModeBreakerFires=false carouselAvailable=true canEnterAuto=true
+2026-10-09T08:33:17.370Z [DEBUG] [servedCatalog] off (not_first_party)
+2026-10-09T08:33:17.389Z [DEBUG] [Perfetto] initializePerfettoTracing called, env value: undefined
+2026-10-09T08:33:17.389Z [DEBUG] [3P telemetry] isTelemetryEnabled=false (CLAUDE_CODE_ENABLE_TELEMETRY=undefined)
+2026-10-09T08:33:17.406Z [DEBUG] [ScheduledTasks] scheduler start() — enabled=false, hasTasks=false
+2026-10-09T08:33:17.407Z [DEBUG] session.start: raised (surface none, not interactive)
+2026-10-09T08:33:17.416Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.273.fc4; cc_entrypoint=sdk-cli;
+2026-10-09T08:33:17.423Z [DEBUG] installPluginsForHeadless: starting
+2026-10-09T08:33:17.423Z [DEBUG] installPluginsForHeadless: no marketplaces declared
+2026-10-09T08:33:17.425Z [DEBUG] [API:timing] dispatching to firstParty model=claude-sonnet-5
+2026-10-09T08:33:17.426Z [DEBUG] [API REQUEST] /v1/messages source=generate_session_title
+2026-10-09T08:33:17.432Z [DEBUG] [sessionRegistry] sweep declined by isRegistrySweepPermitted() — dead records are left in place (neither counted nor deleted)
+2026-10-09T08:33:17.434Z [DEBUG] mcp runtime arm: v1 (source: default)
+2026-10-09T08:33:17.453Z [DEBUG] Ripgrep first use test: PASSED (mode=embedded, path=/opt/hostedtoolcache/node/24.21.0/x64/lib/node_modules/@anthropic-ai/claude-code/bin/claude.exe)
+2026-10-09T08:33:17.453Z [DEBUG] "rg error (signal=undefined, code=2, stderr: rg: /home/runner/.claude/plugins/cache: IO error for operation on /home/runner/.claude/plugins/cache: No such file or directory (os error 2)\n), 0 results"
+2026-10-09T08:33:17.456Z [DEBUG] MCP server "github": Initializing HTTP transport to http://awmg-mcpg:8080/mcp/github
+2026-10-09T08:33:17.456Z [DEBUG] MCP server "github": Node version: v26.3.0, Platform: linux
+2026-10-09T08:33:17.456Z [DEBUG] MCP server "github": Environment: {"NODE_OPTIONS":"not set","UV_THREADPOOL_SIZE":"default","HTTP_PROXY":"http://172.30.0.10:3128","HTTPS_PROXY":"http://172.30.0.10:3128","NO_PROXY":"localhost,127.0.0.1,::1,0.0.0.0,172.30.0.10,172.30.0.20,awmg-mcpg,172.30.0.30,api-proxy"}
+2026-10-09T08:33:17.457Z [DEBUG] MCP server "github": HTTP transport options: {"url":"http://awmg-mcpg:8080/mcp/github","headers":{"User-Agent":"claude-code/2.1.273 (sdk-cli)","Accept-Encoding":"identity","Authorization":"[REDACTED]"},"hasAuthProvider":false,"timeoutMs":120000}
+2026-10-09T08:33:17.457Z [DEBUG] MCP server "github": HTTP transport created successfully
+2026-10-09T08:33:17.459Z [DEBUG] MCP server "github": Starting connection with timeout of 120000ms
+2026-10-09T08:33:17.459Z [DEBUG] MCP server "github": Testing basic HTTP connectivity to http://awmg-mcpg:8080/mcp/github
+2026-10-09T08:33:17.459Z [DEBUG] MCP server "github": Parsed URL: host=awmg-mcpg, port=8080, protocol=http:
+2026-10-09T08:33:17.461Z [DEBUG] MCP server "safeoutputs": Initializing HTTP transport to http://awmg-mcpg:8080/mcp/safeoutputs
+2026-10-09T08:33:17.461Z [DEBUG] MCP server "safeoutputs": Node version: v26.3.0, Platform: linux
+2026-10-09T08:33:17.461Z [DEBUG] MCP server "safeoutputs": Environment: {"NODE_OPTIONS":"not set","UV_THREADPOOL_SIZE":"default","HTTP_PROXY":"http://172.30.0.10:3128","HTTPS_PROXY":"http://172.30.0.10:3128","NO_PROXY":"localhost,127.0.0.1,::1,0.0.0.0,172.30.0.10,172.30.0.20,awmg-mcpg,172.30.0.30,api-proxy"}
+2026-10-09T08:33:17.461Z [DEBUG] MCP server "safeoutputs": HTTP transport options: {"url":"http://awmg-mcpg:8080/mcp/safeoutputs","headers":{"User-Agent":"claude-code/2.1.273 (sdk-cli)","Accept-Encoding":"identity","Authorization":"[REDACTED]"},"hasAuthProvider":false,"timeoutMs":120000}
+2026-10-09T08:33:17.461Z [DEBUG] MCP server "safeoutputs": HTTP transport created successfully
+2026-10-09T08:33:17.462Z [DEBUG] MCP server "safeoutputs": Starting connection with timeout of 120000ms
+2026-10-09T08:33:17.463Z [DEBUG] MCP server "safeoutputs": Testing basic HTTP connectivity to http://awmg-mcpg:8080/mcp/safeoutputs
+2026-10-09T08:33:17.463Z [DEBUG] MCP server "safeoutputs": Parsed URL: host=awmg-mcpg, port=8080, protocol=http:
+2026-10-09T08:33:17.464Z [DEBUG] Watching /home/runner/work/agentic_rd_workflow/agentic_rd_workflow for /home/runner/work/agentic_rd_workflow/agentic_rd_workflow/.claude to appear
+2026-10-09T08:33:17.464Z [DEBUG] Watching for changes in setting files /home/runner/.claude/settings.json...
+2026-10-09T08:33:17.465Z [DEBUG] Preserving file permissions: 100666
+2026-10-09T08:33:17.465Z [DEBUG] Writing to temp file: /home/runner/.claude.json.tmp.413.55a6efee8994
+2026-10-09T08:33:17.469Z [DEBUG] Applied original permissions to temp file
+2026-10-09T08:33:17.480Z [DEBUG] Temp file written successfully, size: 475 bytes
+2026-10-09T08:33:17.480Z [DEBUG] Renaming /home/runner/.claude.json.tmp.413.55a6efee8994 to /home/runner/.claude.json
+2026-10-09T08:33:17.481Z [DEBUG] File /home/runner/.claude.json written atomically
+2026-10-09T08:33:17.543Z [DEBUG] MCP server "github": Successfully connected (transport: http) in 88ms
+2026-10-09T08:33:17.544Z [DEBUG] MCP server "github": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"hasResourceSubscribe":false,"serverVersion":{"name":"awmg-github","version":"v0.4.25"}}
+2026-10-09T08:33:17.544Z [DEBUG] [MCP] Server "github" connected with subscribe=false
+2026-10-09T08:33:17.545Z [WARN] [3P telemetry] Event dropped (no event logger initialized): mcp_server_connection
+2026-10-09T08:33:17.554Z [DEBUG] MCP server "safeoutputs": Successfully connected (transport: http) in 93ms
+2026-10-09T08:33:17.554Z [DEBUG] MCP server "safeoutputs": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"hasResourceSubscribe":false,"serverVersion":{"name":"awmg-safeoutputs","version":"v0.4.25"}}
+2026-10-09T08:33:17.554Z [DEBUG] [MCP] Server "safeoutputs" connected with subscribe=false
+2026-10-09T08:33:17.640Z [DEBUG] Failed to stat directory /etc/claude-code/.claude/output-styles: ENOENT: no such file or directory, stat '/etc/claude-code/.claude/output-styles'
+2026-10-09T08:33:17.640Z [DEBUG] Failed to stat directory /home/runner/.claude/output-styles: ENOENT: no such file or directory, stat '/home/runner/.claude/output-styles'
+2026-10-09T08:33:17.641Z [DEBUG] Total plugin output styles loaded: 0
+2026-10-09T08:33:17.642Z [DEBUG] act_dont_rederive_arm_active source=growthbook
+2026-10-09T08:33:17.650Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-10-09T08:33:17.650Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-10-09T08:33:17.650Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-10-09T08:33:17.651Z [DEBUG] Sending 12 skills via attachment (initial)
+2026-10-09T08:33:17.651Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-10-09T08:33:17.662Z [DEBUG] [session-notices] advertise=false mode=acceptEdits flag=false(disabled) pollChannel=false remote=false remoteEnv=false nonInteractive=true
+2026-10-09T08:33:17.664Z [DEBUG] [engine] turn 1 start
+2026-10-09T08:33:17.670Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=180000
+2026-10-09T08:33:17.708Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.273.3fe; cc_entrypoint=sdk-cli;
+2026-10-09T08:33:17.715Z [DEBUG] [API:timing] dispatching to firstParty model=claude-sonnet-5
+2026-10-09T08:33:17.717Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-10-09T08:33:17.756Z [DEBUG] [mcp-registry] Loaded 294 official MCP URLs (legacy)
+2026-10-09T08:33:17.782Z [DEBUG] [fs.watch probe] verdict: delivers
+2026-10-09T08:33:18.754Z [DEBUG] Stream started - received first chunk
+2026-10-09T08:33:18.754Z [DEBUG] [API:timing] first byte after 1040ms
+2026-10-09T08:33:19.534Z [INFO] [Stall] tool_dispatch_start tool=Bash toolUseId=toolu_01WL8DaWFhij1w3k8fai7Uok permissionDecisionMs=5
+2026-10-09T08:33:19.538Z [DEBUG] Creating shell snapshot for bash (/bin/bash)
+2026-10-09T08:33:19.538Z [DEBUG] Looking for shell config file: /home/runner/.bashrc
+2026-10-09T08:33:19.545Z [DEBUG] Shell config file not found: /home/runner/.bashrc, creating snapshot with Claude Code defaults only
+2026-10-09T08:33:19.545Z [DEBUG] Snapshots directory: /home/runner/.claude/shell-snapshots
+2026-10-09T08:33:19.546Z [DEBUG] Stream started - received first chunk
+2026-10-09T08:33:19.546Z [DEBUG] [API:timing] first byte after 2122ms
+2026-10-09T08:33:19.546Z [DEBUG] Creating snapshot at: /home/runner/.claude/shell-snapshots/snapshot-bash-1791534799545-d1q3ms.sh
+2026-10-09T08:33:19.546Z [DEBUG] Execution timeout: 10000ms
+2026-10-09T08:33:19.549Z [DEBUG] Spawn-env probe captured 207 keys
+2026-10-09T08:33:19.554Z [DEBUG] Shell snapshot created successfully (2902 bytes)
+2026-10-09T08:33:19.555Z [DEBUG] No session environment scripts found
+2026-10-09T08:33:19.555Z [DEBUG] Spawning shell without login (-l flag skipped)
+2026-10-09T08:33:19.568Z [INFO] [Stall] tool_dispatch_end tool=Bash toolUseId=toolu_01WL8DaWFhij1w3k8fai7Uok outcome=ok durationMs=34
+2026-10-09T08:33:19.574Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-10-09T08:33:19.574Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-10-09T08:33:19.574Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-10-09T08:33:19.574Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-10-09T08:33:19.576Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=180000
+2026-10-09T08:33:19.584Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.273.3fe; cc_entrypoint=sdk-cli;
+2026-10-09T08:33:19.588Z [DEBUG] [API:timing] dispatching to firstParty model=claude-sonnet-5
+2026-10-09T08:33:19.589Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-10-09T08:33:20.549Z [DEBUG] Stream started - received first chunk
+2026-10-09T08:33:20.549Z [DEBUG] [API:timing] first byte after 962ms
+2026-10-09T08:33:21.056Z [INFO] [Stall] tool_dispatch_start tool=Read toolUseId=toolu_01HTjdDN8yD9Hq4pyoo6cRHr permissionDecisionMs=6
+2026-10-09T08:33:21.060Z [INFO] [Stall] tool_dispatch_end tool=Read toolUseId=toolu_01HTjdDN8yD9Hq4pyoo6cRHr outcome=ok durationMs=4
+2026-10-09T08:33:21.468Z [INFO] [Stall] tool_dispatch_start tool=Bash toolUseId=toolu_01X8ZvouzgmFsB9xDZ3BBXAD permissionDecisionMs=11
+2026-10-09T08:33:21.473Z [DEBUG] Spawning shell without login (-l flag skipped)
+2026-10-09T08:33:21.484Z [INFO] [Stall] tool_dispatch_end tool=Bash toolUseId=toolu_01X8ZvouzgmFsB9xDZ3BBXAD outcome=ok durationMs=16
+2026-10-09T08:33:21.491Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-10-09T08:33:21.491Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-10-09T08:33:21.491Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-10-09T08:33:21.491Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-10-09T08:33:21.495Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=180000
+2026-10-09T08:33:21.501Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.273.3fe; cc_entrypoint=sdk-cli;
+2026-10-09T08:33:21.504Z [DEBUG] [API:timing] dispatching to firstParty model=claude-sonnet-5
+2026-10-09T08:33:21.505Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-10-09T08:33:22.487Z [DEBUG] Stream started - received first chunk
+2026-10-09T08:33:22.488Z [DEBUG] [API:timing] first byte after 984ms
+2026-10-09T08:33:30.573Z [INFO] [Stall] tool_dispatch_start tool=Bash toolUseId=toolu_01Bb9MYqswJoFRU3QJmxnAnm permissionDecisionMs=15
+2026-10-09T08:33:30.579Z [DEBUG] Spawning shell without login (-l flag skipped)
+2026-10-09T08:33:30.593Z [INFO] [Stall] tool_dispatch_end tool=Bash toolUseId=toolu_01Bb9MYqswJoFRU3QJmxnAnm outcome=ok durationMs=20
+2026-10-09T08:33:30.597Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-10-09T08:33:30.597Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-10-09T08:33:30.597Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-10-09T08:33:30.597Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-10-09T08:33:30.599Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=180000
+2026-10-09T08:33:30.604Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.273.3fe; cc_entrypoint=sdk-cli;
+2026-10-09T08:33:30.607Z [DEBUG] [API:timing] dispatching to firstParty model=claude-sonnet-5
+2026-10-09T08:33:30.608Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-10-09T08:33:31.520Z [DEBUG] Stream started - received first chunk
+2026-10-09T08:33:31.520Z [DEBUG] [API:timing] first byte after 913ms
+2026-10-09T08:33:47.950Z [WARN] [Stall] stream_idle_partial lastChunkAgeMs=15000 bytesTotal=4910 idleDeadlineMs=300000
+2026-10-09T08:33:49.151Z [INFO] [Stall] tool_dispatch_start tool=Write toolUseId=toolu_01H1NAbMpbANfQK5N3rw6359 permissionDecisionMs=4
+2026-10-09T08:33:49.153Z [DEBUG] Writing to temp file: /proc/self/fd/15/REPOSITORY_HEALTH_REPORT.md.tmp.413.8faefca246a4
+2026-10-09T08:33:49.154Z [DEBUG] Temp file written successfully, size: 4262 bytes
+2026-10-09T08:33:49.154Z [DEBUG] Renaming /proc/self/fd/15/REPOSITORY_HEALTH_REPORT.md.tmp.413.8faefca246a4 to /proc/self/fd/15/REPOSITORY_HEALTH_REPORT.md
+2026-10-09T08:33:49.154Z [DEBUG] File /proc/self/fd/15/REPOSITORY_HEALTH_REPORT.md written atomically
+2026-10-09T08:33:49.155Z [INFO] [Stall] tool_dispatch_end tool=Write toolUseId=toolu_01H1NAbMpbANfQK5N3rw6359 outcome=ok durationMs=4
+2026-10-09T08:33:49.159Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-10-09T08:33:49.159Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-10-09T08:33:49.159Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-10-09T08:33:49.160Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-10-09T08:33:49.162Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=180000
+2026-10-09T08:33:49.167Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.273.3fe; cc_entrypoint=sdk-cli;
+2026-10-09T08:33:49.170Z [DEBUG] [API:timing] dispatching to firstParty model=claude-sonnet-5
+2026-10-09T08:33:49.171Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-10-09T08:33:50.293Z [DEBUG] Stream started - received first chunk
+2026-10-09T08:33:50.293Z [DEBUG] [API:timing] first byte after 1123ms
+2026-10-09T08:34:02.466Z [INFO] [Stall] tool_dispatch_start tool=mcp__safeoutputs__create_issue toolUseId=toolu_01P6TcPAZd8fEVRFFAp21DiT permissionDecisionMs=1
+2026-10-09T08:34:02.467Z [DEBUG] MCP server "safeoutputs": Calling MCP tool: create_issue
+2026-10-09T08:34:02.808Z [DEBUG] MCP server "safeoutputs": Tool 'create_issue' completed successfully in 341ms
+2026-10-09T08:34:02.810Z [INFO] [Stall] tool_dispatch_end tool=mcp__safeoutputs__create_issue toolUseId=toolu_01P6TcPAZd8fEVRFFAp21DiT outcome=ok durationMs=343
+2026-10-09T08:34:02.814Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-10-09T08:34:02.814Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-10-09T08:34:02.814Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-10-09T08:34:02.814Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-10-09T08:34:02.816Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=180000
+2026-10-09T08:34:02.822Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.273.3fe; cc_entrypoint=sdk-cli;
+2026-10-09T08:34:02.826Z [DEBUG] [API:timing] dispatching to firstParty model=claude-sonnet-5
+2026-10-09T08:34:02.827Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-10-09T08:34:03.972Z [DEBUG] Stream started - received first chunk
+2026-10-09T08:34:03.972Z [DEBUG] [API:timing] first byte after 1147ms
+2026-10-09T08:34:05.653Z [DEBUG] [engine] turn 1 end (turns=7 usage in=5358 out=4830 cost=$0.2965 api=49663ms stop=end_turn resultLen=504)
+2026-10-09T08:34:05.658Z [DEBUG] MCP server "github": HTTP connection closed after 48s (cleanly)
+2026-10-09T08:34:05.658Z [DEBUG] MCP server "github": Cleared connection cache for reconnection
+2026-10-09T08:34:05.658Z [DEBUG] MCP server "safeoutputs": HTTP connection closed after 48s (cleanly)
+2026-10-09T08:34:05.658Z [DEBUG] MCP server "safeoutputs": Cleared connection cache for reconnection
+2026-10-09T08:34:05.659Z [DEBUG] MCP server "github": HTTP connection dropped after 48s uptime
+2026-10-09T08:34:05.659Z [DEBUG] MCP server "github": Connection error: SSE stream disconnected: AbortError: The operation was aborted.
+2026-10-09T08:34:05.659Z [DEBUG] MCP server "github": Terminal connection error 1/3
+2026-10-09T08:34:05.659Z [DEBUG] MCP server "safeoutputs": HTTP connection dropped after 48s uptime
+2026-10-09T08:34:05.659Z [DEBUG] MCP server "safeoutputs": Connection error: SSE stream disconnected: AbortError: The operation was aborted.
+2026-10-09T08:34:05.659Z [DEBUG] MCP server "safeoutputs": Terminal connection error 1/3
+2026-10-09T08:34:05.661Z [DEBUG] [uds-messaging] Shutting down
+2026-10-09T08:34:05.663Z [DEBUG] LSP server manager shut down successfully
+2026-10-09T08:34:05.663Z [DEBUG] Cleaned up session snapshot: /home/runner/.claude/shell-snapshots/snapshot-bash-1791534799545-d1q3ms.sh
