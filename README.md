@@ -169,5 +169,6 @@ The project includes a GitHub Actions configuration file located in `.github/wor
 * **Strong Type Enforcement**: Combining LangGraph state assertions with Pydantic AI validation guarantees that schemas match exact structural expectations at node transitions before executing further pipeline cycles.
 * **On-Demand MCP Integration**: External tools (such as hospital site compliance lookups) can be injected dynamically via the Model Context Protocol only when required, keeping standard document extraction fast and lightweight.
 
+
 > **Note:** This project uses a custom virtual environment named `.venv_a_rd_w`. Activate it with: `source .venv_a_rd_w/bin/activate`
 
