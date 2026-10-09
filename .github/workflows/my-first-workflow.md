@@ -11,7 +11,9 @@ permissions:
   pull-requests: read
   copilot-requests: write
 
-network: defaults
+network:
+  allowDomains:
+    - api.anthropic.com
 ---
 
 # my-first-workflow
