@@ -81,3 +81,6 @@ pytest
 
 ```
 
+
+> **Note:** This project uses a custom virtual environment named `.venv_a_rd_w`. Activate it with: `source .venv_a_rd_w/bin/activate`
+
